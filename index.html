@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image blur loadout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: verdana;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .bg{
+            /* background: url("https://source.unsplash.com/random"); */
+            background: url("https://www.metoffice.gov.uk/binaries/content/gallery/metofficegovuk/hero-images/advice/maps-satellite-images/satellite-image-of-globe.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-position:center center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            filter: saturate(0%) blur(20px);
+        }
+        .status{
+            font-size: 2.5rem;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+    </div>
+    <h1 class="status">0%</h1>
+
+    <script src="main.js"></script>
+</body>
+</html>
